@@ -65,11 +65,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, featured = fa
 
   const handleExternalClick = (e: React.MouseEvent) => {
     if (product.isExternal && product.ctaUrl === '#') {
-      // Outbound affiliate link placeholder notice
-      // TODO: Replace with real affiliate link when live
+      // Affiliate link not live yet — placeholder only, do not navigate anywhere.
+      // TODO: Replace ctaUrl '#' in products.ts with the real affiliate link when live.
       e.preventDefault();
-      // Informative user feedback when clicking placeholder affiliate link
-      window.open('https://example.com/affiliate-redirect-placeholder', '_blank');
     }
   };
 
@@ -136,7 +134,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, featured = fa
             href={product.ctaUrl}
             onClick={handleExternalClick}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold text-[#0B1F3A] bg-[#F59E0B] hover:bg-[#D97706] transition-colors shadow-sm text-center"
           >
             <span>{product.ctaText}</span>
@@ -155,7 +153,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, featured = fa
         {/* Subtle note for editorial review link when it's Systeme.io */}
         {product.id === 'systeme-io' && (
           <p className="text-[11px] text-center text-gray-500 mt-2">
-            Detailed independent breakdown &amp; testing analysis
+            Detailed independent breakdown &amp; evaluation
           </p>
         )}
       </div>

@@ -252,9 +252,9 @@ export const PRODUCTS: Product[] = [
       primary: '$37 (verified)',
     },
     ctaText: 'Get the Playbook',
-    ctaUrl: '#', // TODO: Replace with real affiliate link / Gumroad checkout link for Faceless Digital Marketing Playbook
+    ctaUrl: 'https://yousufsafi.gumroad.com/l/faceless-digital-marketing-playbook', // Own product — live Gumroad checkout (verified)
     isExternal: true,
-    affiliatePlaceholderNote: '// TODO: Replace with real Gumroad link: https://gumroad.com/l/faceless-digital-marketing-playbook',
+    affiliatePlaceholderNote: 'Own product — direct Gumroad link (not an affiliate link)',
     iconName: 'BookOpen',
   },
 ];
