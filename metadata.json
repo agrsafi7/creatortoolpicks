@@ -1,0 +1,6 @@
+{
+  "name": "CreatorToolPicks",
+  "description": "Tested tools and studio gear for faceless content creators with independent research and published evaluation criteria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
